@@ -8,6 +8,11 @@ img{
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .player {
     background-color: rgb(38, 38, 38);
     height: 100px;
@@ -30,4 +35,21 @@ img{
     flex-grow: 1;
     background-color: rgb(20, 24, 33);
     overflow: scroll;
+}
+
+#upgrade-bar {
+    height: 75px;
+    background-color: rgb(8, 11, 18);
+    color: white;
+    padding-right: 15px;
+    padding-top: 30px;
+    text-align: end;
+    position: sticky;
+    top: 0;
+}
+
+#upgrade-bar a{
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 10px;
 }
