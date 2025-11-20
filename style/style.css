@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family:"Montserrat";
+body {
+    font-family: "Montserrat";
 }
 
-img{
+img {
     max-width: 100%;
 }
 
@@ -39,7 +39,7 @@ a {
     padding: 20px 50px 0px 20px;
     flex-shrink: 0;
     color: grey;
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center
@@ -62,7 +62,7 @@ a {
     top: 0;
 }
 
-#upgrade-bar a{
+#upgrade-bar a {
     border: 1px solid white;
     border-radius: 50px;
     padding: 10px;
@@ -105,13 +105,13 @@ ul {
     list-style: none;
 }
 
-.sidebar ul{
+.sidebar ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.card-container ul{
+.card-container ul {
     display: flex;
     gap: 16px;
     color: gray;
@@ -141,7 +141,7 @@ figcaption {
     color: gray;
 }
 
-.content{
+.content {
     padding: 20px;
 }
 
@@ -153,19 +153,19 @@ p {
     border-radius: 100px;
 }
 
-.player .img-side{
-    opacity:1;
+.player .img-side {
+    opacity: 1;
     width: 50px;
 }
 
 .box-brano {
     display: flex;
     align-items: center;
-    width: calc(100% / 3); 
+    width: calc(100% / 3);
     gap: 16px;
 }
 
-.box-player{
+.box-player {
     display: flex;
     align-items: center;
     width: calc(100% / 3);
@@ -176,7 +176,7 @@ p {
     display: flex;
     align-items: center;
     width: calc(100% / 3);
-    justify-content: end; 
+    justify-content: end;
     gap: 16px;
 }
 
@@ -198,22 +198,55 @@ p {
     flex-grow: 1;
 }
 
-.box-volume .slider{
+.box-volume .slider {
     flex-grow: 0;
 }
 
-a:hover, a:hover>img {
+a:hover,
+a:hover>img {
     color: white !important;
-    opacity: 1;      
+    opacity: 1;
 }
 
 .fa-plus:hover {
     background-color: white;
 }
 
-#upgrade-bar a:hover{
-    transform:scale(1.1);
+#upgrade-bar a:hover {
+    transform: scale(1.1);
 }
+
+.flex-play {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.img-relative {
+    position: relative;
+    height: 100%;
+}
+
+.img-hover {
+    position: absolute;
+    display: none;
+    font-size: 3rem;
+}
+
+.flex-play:hover .img-hover{
+    display: block;    
+}
+
+.flex-play:hover .img-relative {
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:878px) {
@@ -228,21 +261,24 @@ a:hover, a:hover>img {
     .card {
         width: calc(100% / 4 - (60px / 4));
     }
-    
+
 }
 
-@media screen and (max-width:640px){
+@media screen and (max-width:640px) {
     .card {
         width: calc(100% / 2 - (20px / 2));
     }
+
     .box-brano {
-        width:25%;
+        width: 25%;
         gap: 8px;
     }
+
     .box-player {
         width: 40%;
         justify-content: center;
     }
+
     .controls {
         gap: 8px;
     }
@@ -250,6 +286,7 @@ a:hover, a:hover>img {
     .music-bar {
         gap: 8px;
     }
+
     .slider {
         width: 100%;
     }
@@ -258,39 +295,46 @@ a:hover, a:hover>img {
         width: 10%;
         gap: 8px;
     }
-    .box-volume .slider{
+
+    .box-volume .slider {
         display: none;
     }
 }
 
-@media screen and (max-width:480px){
-    .flex-sidebar span{
+@media screen and (max-width:480px) {
+    .flex-sidebar span {
         display: none;
     }
-    
+
     .logo-small {
         display: block;
     }
 
-    .logo-big{
+    .logo-big {
         display: none;
     }
+
     .playlist {
         display: none;
     }
+
     .sidebar {
         flex-basis: 60px;
         padding: 8px;
     }
+
     .box-volume {
-        gap:4px;
+        gap: 4px;
     }
+
     .controls {
         gap: 4px;
     }
-    .music-bar{
+
+    .music-bar {
         gap: 4px;
     }
+
     .box-brano {
         gap: 4px;
     }
