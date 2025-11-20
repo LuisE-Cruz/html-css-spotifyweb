@@ -73,6 +73,10 @@ a {
     padding-top: 16px;
 }
 
+.logo-small {
+    display: none;
+}
+
 .img-side {
     width: 30px;
     opacity: 0.5;
@@ -244,9 +248,25 @@ p {
     }
 }
 
-@media screen and (max-width:480px);{
+@media screen and (max-width:480px){
     .flex-sidebar span{
         display: none;
+    }
+    
+    .logo-small {
+        display: block;
+    }
+
+    .logo-big{
+        display: none;
+    }
+    .playlist {
+        display: none;
+    }
+    .sidebar {
+        flex-basis: 60px;
+        padding: 8px;
+        align-items: center;
     }
     
 }
