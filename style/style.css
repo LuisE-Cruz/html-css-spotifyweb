@@ -196,3 +196,18 @@ p {
 .box-volume .slider{
     flex-grow: 0;
 }
+
+@media screen and (max-width:878px) {
+    .card-container ul {
+        flex-wrap: wrap;
+    }
+
+    .container-cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc(100% / 4 - (60px / 4));
+    }
+    
+}
