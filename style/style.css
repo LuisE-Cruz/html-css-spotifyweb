@@ -42,6 +42,7 @@ a {
      display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center
 }
 
 .card-container {
@@ -266,7 +267,17 @@ p {
     .sidebar {
         flex-basis: 60px;
         padding: 8px;
-        align-items: center;
     }
-    
+    .box-volume {
+        gap:4px;
+    }
+    .controls {
+        gap: 4px;
+    }
+    .music-bar{
+        gap: 4px;
+    }
+    .box-brano {
+        gap: 4px;
+    }
 }
