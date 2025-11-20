@@ -165,11 +165,34 @@ p {
 .box-volume {
     display: flex;
     align-items: center;
-    width: calc(100% / 3); 
+    width: calc(100% / 3);
+    justify-content: end; 
+    gap: 16px;
 }
 
 .controls {
     display: flex;
     gap: 32px;
     color: white;
+    padding: 8px;
+}
+
+.fa-solid {
+    color: white;
+    font-size: bold;
+}
+
+.music-bar {
+    display: flex;
+    gap: 16px;
+    padding: 8px;
+    width: 100%;
+}
+
+.slider {
+    flex-grow: 1;
+}
+
+.box-volume .slider{
+    flex-grow: 0;
 }
