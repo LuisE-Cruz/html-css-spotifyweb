@@ -211,3 +211,42 @@ p {
     }
     
 }
+
+@media screen and (max-width:640px){
+    .card {
+        width: calc(100% / 2 - (20px / 2));
+    }
+    .box-brano {
+        width:25%;
+        gap: 8px;
+    }
+    .box-player {
+        width: 40%;
+        justify-content: center;
+    }
+    .controls {
+        gap: 8px;
+    }
+
+    .music-bar {
+        gap: 8px;
+    }
+    .slider {
+        width: 100%;
+    }
+
+    .box-volume {
+        width: 10%;
+        gap: 8px;
+    }
+    .box-volume .slider{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px);{
+    .flex-sidebar span{
+        display: none;
+    }
+    
+}
